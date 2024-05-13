@@ -6,16 +6,3 @@ if edad >= 18:
     print("Eres mayor de edad causita.")
 else:
     print("Eres menor de edad, mocos@.")
-
-
-2 # Almacenar la contraseña en una variable
-contrasena_guardada = "tu_papi"
-
-# Pedir al usuario que ingrese la contraseña
-contrasena_usuario = input("Por favor, ingresa la contraseña: ")
-
-# Verificar si la contraseña introducida coincide con la guardada (sin distinguir mayúsculas y minúsculas)
-if contrasena_usuario.lower() == contrasena_guardada.lower():
-    print("La contraseña es correcta.")
-else:
-    print("La contraseña es incorrecta.")  
