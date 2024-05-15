@@ -52,7 +52,7 @@
 #         count +=1
 # print(count),
 
-#2
+# clase hoy 15/05/2024
 # oracion:str=input("ingrese una oriacion: ")
 # contador=0
 # for indice,letra in enumerate(oracion):
@@ -64,7 +64,47 @@
 
 #  escribir un programa que pregunte al usuario su edad y muestre por pantalla todos los años que ha cumplido 
 # (desde 1 hasta su edad)
-edad = int(input("Por favor, ingresa tu edad: "))
+# edad = int(input("Por favor, ingresa tu edad: "))
 
-for n in range(1, edad+1):
-    print("Has cumplido",n, "años")
+# for n in range(1, edad+1):
+#     print("Has cumplido",n, "años")
+
+# crear un programa que me pida el nombre de tres personas y guarde en una variable global
+# la ultima letra de sus nombres 
+# mostrar por pantalla la variable global con las tres ultimas letras del nombre de cada persona 
+
+# ejemplo:
+# abel
+# antony
+# edith
+# salida lyh
+
+# ultimas_letras = ""
+
+# for n in range(3):
+#     nombre = input("Ingresa el nombre de una persona: ")
+#     ultimas_letras += nombre[-1] 
+# print("Las últimas letras de los nombres son:", ultimas_letras)
+
+
+# ejemplo del profe 
+
+# ultima_letra:str=""
+# for _ in range(3)
+# nombre:str=input("escribe tu nombre:")
+# last_latter:str=nombre[-1]
+# print(ultima_letra)
+
+# crear un programa que muestre por terminal la siguiente figura:
+# a
+# ee 
+# iii 
+# oooo
+# uuuuu
+# Definir las vocales en el orden deseado
+
+print("a")
+print("ee")
+print("iii")
+print("oooo")
+print("uuuuu")
