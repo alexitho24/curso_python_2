@@ -45,9 +45,26 @@
 #         #contador += 1
 
 # print(f"la cantidad de letras a que tengo es {contador}
-sentence = input("Escribe una oración: ")
-count = 0
-for i in range(len(sentence)):
-    if sentence[i] == ',':
-        count +=1
-print(count)
+# sentence = input("Escribe una oración: ")
+# count = 0
+# for i in range(len(sentence)):
+#     if sentence[i] == ',':
+#         count +=1
+# print(count),
+
+#2
+# oracion:str=input("ingrese una oriacion: ")
+# contador=0
+# for indice,letra in enumerate(oracion):
+#     if letra == ",":
+#      print(f"su indice es {indice}")
+#     contador=1
+# print(f"la cantidad de comas es {contador}")
+
+
+#  escribir un programa que pregunte al usuario su edad y muestre por pantalla todos los años que ha cumplido 
+# (desde 1 hasta su edad)
+edad = int(input("Por favor, ingresa tu edad: "))
+
+for n in range(1, edad+1):
+    print("Has cumplido",n, "años")

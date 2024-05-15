@@ -59,7 +59,39 @@ print(f"la cantidad de letras a que es {contador}")
 #ojo: tierne que pedir al usuario.
 sentence = input("Escribe una oración: ")
 count = 0
-for i in range(len(sentence)):
-    if sentence[i] == ',':
+for n in range(len(sentence)):
+    if sentence[n] == ',':
         count += 1
 print(count)
+
+
+# Solicitar al usuario que ingrese una cadena de texto
+texto = input("Por favor, ingresa una cadena de texto: ")
+
+# Inicializar una lista para almacenar los índices de las comas
+indices_comas = []
+
+# Contador para la cantidad de comas
+cantidad_comas = 0
+
+# Recorrer la cadena de texto para encontrar las comas y sus índices
+for i in range(len(texto)):
+    if texto[i] == ',':
+        cantidad_comas += 1
+        indices_comas.append(i)
+
+# Mostrar la cantidad de comas y sus índices
+print("La cantidad de comas en el texto es:", cantidad_comas)
+print("Los índices de las comas son:", indices_comas)
+
+el extend 
+este es para poder agregar multiples elementos a una lista 
+#lo del profe
+oracion:str=input("ingrese una oriacion: ")
+contador=0
+for indice,letra in enumerate(oracion):
+    print(f"su indice es {indice}")
+    contador=1
+print(f"la ccantidad de comas es {contador}")
+# el enumerate es mas rapido y almacena menos en documentos grandes y medianos
+# 
