@@ -93,5 +93,53 @@ for indice,letra in enumerate(oracion):
     print(f"su indice es {indice}")
     contador=1
 print(f"la ccantidad de comas es {contador}")
-# el enumerate es mas rapido y almacena menos en documentos grandes y medianos
-# 
+#  el enumerate es mas rapido y almacena menos en documentos grandes y medianos
+
+
+
+#  escribir un programa que pregunte al usuario su edad y muestre por pantalla todos los años que ha cumplido 
+# (desde 1 hasta su edad)
+
+
+# edad = int(input("Por favor, ingresa tu edad: "))
+
+# for n in range(1, edad+1):
+#     print("Has cumplido",n, "años")
+
+# crear un programa que me pida el nombre de tres personas y guarde en una variable global
+# la ultima letra de sus nombres 
+# mostrar por pantalla la variable global con las tres ultimas letras del nombre de cada persona 
+
+# ejemplo:
+# abel
+# antony
+# edith
+# salida lyh
+
+# ultimas_letras = ""
+
+# for i in range(3):
+#     nombre = input("Ingresa el nombre de una persona: ")
+#     ultimas_letras += nombre[-1] 
+# print("Las últimas letras de los nombres son:", ultimas_letras)
+# crear un programa que muestre por terminal la siguiente figura:
+# a
+# ee 
+# iii 
+# oooo
+# uuuuu
+# crear un programa que pida un numero y que muestre la tabla de multiplicas de ese numero
+
+numero = int(input("Ingrese un número para mostrar la tabla de multiplicar: "))
+
+
+print(f"Tabla de multiplicar del número {numero}:")
+for n in range(1, 11):
+    
+    print(f"{numero} x {n} = {resultado}")
+
+### while
+es un mecanismo que usa`python` para repetir instrucciones, la sematica de esta sentencia ess: `mientras se cumpla la condicion has algo`
+```python
+while true:
+    print("hola")
