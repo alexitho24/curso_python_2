@@ -141,5 +141,16 @@ for n in range(1, 11):
 ### while
 es un mecanismo que usa`python` para repetir instrucciones, la sematica de esta sentencia ess: `mientras se cumpla la condicion has algo`
 ```python
-while true:
-    print("hola")
+
+condicion=True
+while condicion:
+    eval=input("desea continuar [S/N]")
+    if eval=="S":
+    print("continuas en bucle")
+    continue
+else:
+    print("se termino el programa")
+    condicion=False
+    break
+
+``` miercoles 22-05-2024```

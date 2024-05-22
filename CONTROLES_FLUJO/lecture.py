@@ -126,14 +126,19 @@
 # crear un programa que pida la xcantidad de notas que se debe registrar
 # luego pidira las notas e imprima el promedio con while
 
-cantidad_notas = int(input("Ingrese la cantidad de notas a registrar: "))
-notas = []
-total = 0
-contador = 0
-while contador < cantidad_notas:
-    nota = float(input("Ingrese la nota: "))
-    notas.append(nota)
-    total += nota
-    contador += 1
-promedio = total / cantidad_notas
-print(f"El promedio de las {cantidad_notas} notas ingresadas es: {promedio}")
+# cantidad_notas = int(input("Ingrese la cantidad de notas a registrar: "))
+# notas = []
+# total = 0
+# contador = 0
+# while contador < cantidad_notas:
+#     nota = float(input("Ingrese la nota: "))
+#     notas.append(nota)
+#     total += nota
+#     contador += 1
+# promedio = total / cantidad_notas
+# print(f"El promedio de las {cantidad_notas} notas ingresadas es: {promedio}")
+
+
+
+
+
