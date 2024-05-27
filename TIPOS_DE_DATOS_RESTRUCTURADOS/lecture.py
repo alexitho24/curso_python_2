@@ -1,0 +1,59 @@
+# lista=["abel","anthony","miguel"]
+# diccionario={"nombre":"antonio", "edad":15 "sexo":False}
+# print(diccionario["nombre"])
+
+# texto="hola"
+# lista_texto=list(texto)
+# lista2=[e for e in texto]
+
+# # ejemplos con split
+# texto_largo="hola como estan bienvenidos al salon"
+# nueva_lista=list(texto_largo)
+# print(nueva_lista)
+
+# texto_largo="hola como estan bienvenidos al salon"
+# nueva_lista=texto_largo.split(" ")
+# print(nueva_lista)
+
+# texto_largo="hola como estan bienvenidos al salon"
+# nuevo_texto=texto_largo[16:]
+# nueva_lista=nuevo_texto.split(" ")
+# print(nueva_lista)
+
+
+# texto_largo="loquitas_.mp4"
+# nuevo_texto=texto_largo.split(".")
+# print(nuevo_texto [-1])
+
+# texto_largo="este es un texto largo chiquitas y chiquitos"
+# nuevo_texto=texto_largo.split(" ")
+# print(" ".join(nuevo_texto))
+alumnos = [
+    {"nombre": "Antoni", 
+     "apellido": "Gomez", "edad": 25},
+    {"nombre": "Abel",
+     "apellido": "Perez", "edad": 23},
+    {"nombre": "Ruth", 
+     "apellido":
+       "Martinez", "edad": 22},
+    {"nombre": "Lizbeth", 
+     "apellido": "Garcia", "edad": 24},
+    {"nombre": "Luz", 
+     "apellido": "Lopez", "edad": 21}
+]
+
+alumnos.append({"nombre": "Antoni", "apellido": "gomezs", "edad": 26})
+
+alumnos = [alumno for alumno in alumnos if alumno["nombre"] != "Abel"]
+
+posicion_alumno_4 = None
+for i, alumno in enumerate(alumnos):
+    if i == 3:  
+        posicion_alumno_4 = i
+        break
+
+print("Lista de alumnos actualizada:")
+for alumno in alumnos:
+    print(alumno)
+
+print("La posición del alumno 4 en la lista es:", posicion_alumno_4)
