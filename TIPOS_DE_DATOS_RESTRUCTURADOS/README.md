@@ -1,5 +1,5 @@
 # tipos de datos estructurados (TDA- tipos de datos abstractos)
-<!-- ```python
+!-- ```python
 #lista - sus valores o elemtos se pueden actualizar, eliminar.
 lista=["abel",20,5.2,.5,False,["texto",.2]]
 #tupla - sus valores o elementos no pueden ser modificados o eliminados.
@@ -133,3 +133,57 @@ for alumno in alumnos:
     print(alumno)
 
 print("La posición del alumno 4 en la lista es:", posicion_alumno_4)
+
+
+
+
+
+
+
+
+
+
+
+
+### 5, comparacion de listas
+podemos hacer uso de los operadores de comparacion para comparar listas 
+**ejm:** 
+
+compra=[1,2,3,]>[1,2,4]
+# 1 no por que son iguales en ambas listas
+# 2 no por que son iguales en ambas listas 
+# 3 evalua que es menor a 4 
+# entonces la primera lista es menor que la segunda lista 
+print(compra)
+# salida:
+```
+### 6. cuidado con las copias
+### 7. fe de erratas (actualizar listas )
+lista=[2,3,4,5,6]
+copia_lista=lista[0]=2
+print(copia_lista)
+#[2,3,4,5,6]
+# modificando lista con diccionario 
+alumnos=[
+    { 
+        "nombre":"abel"
+        "edad":15
+    },
+    {
+        "nombre":"anthony"
+        "edad":29
+    }
+]
+alumnos[0]["edad"]=30
+print(alumnos)
+# crear un programa que reciba una lista desordenada y muestre por terminal la lista ordenada y la lista previa a ser ordenada.
+lista=[4,76,1,3,6,8,2]
+lista.sort()
+print(lista)
+
+#tareas
+# crear una lista con 4 diccionarios donde tendran los datos de sus mascotas ( nombre, edad, sexo, raza)
+# tareas 
+# mostrar la lista con los 4 diccionarios
+# editar el 3er registro y cambiarle la edad sin modificar la lista original
+# mostrar la lista original y luego la lista con el 3er registro modificado.
