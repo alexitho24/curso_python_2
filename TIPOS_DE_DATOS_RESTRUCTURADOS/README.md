@@ -187,3 +187,14 @@ print(lista)
 # mostrar la lista con los 4 diccionarios
 # editar el 3er registro y cambiarle la edad sin modificar la lista original
 # mostrar la lista original y luego la lista con el 3er registro modificado.
+
+
+
+
+
+
+
+
+# yo como profesor
+# deseo que me den acceso  para poder registrar las notas de mis estudiantes 
+# para que mis estudiantes vean su rendimiento academico
