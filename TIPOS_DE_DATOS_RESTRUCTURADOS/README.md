@@ -188,6 +188,31 @@ print(lista)
 # editar el 3er registro y cambiarle la edad sin modificar la lista original
 # mostrar la lista original y luego la lista con el 3er registro modificado.
 
+# Crear una lista con 4 diccionarios de mascotas
+mascotas = [
+    {"nombre": "Luna", "edad": 3, "sexo": "hembra", "raza": "Labrador"},
+    {"nombre": "Max", "edad": 5, "sexo": "macho", "raza": "Golden Retriever"},
+    {"nombre": "Bella", "edad": 2, "sexo": "hembra", "raza": "Poodle"},
+    {"nombre": "Rocky", "edad": 4, "sexo": "macho", "raza": "Bulldog"}
+]
+
+# Mostrar la lista con los 4 diccionarios
+print("Lista original:")
+for mascota in mascotas:
+    print(mascota)
+
+# Editar el 3er registro y cambiarle la edad sin modificar la lista original
+mascotas[2]["edad"] = 3
+
+# Mostrar la lista original y luego la lista con el 3er registro modificado
+print("\nLista original:")
+for mascota in mascotas:
+    print(mascota)
+
+# Mostrar la lista con el 3er registro modificado
+print("\nLista con el 3er registro modificado:")
+for mascota in mascotas:
+    print(mascota)
 
 
 
