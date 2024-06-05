@@ -223,3 +223,21 @@ for mascota in mascotas:
 # yo como profesor
 # deseo que me den acceso  para poder registrar las notas de mis estudiantes 
 # para que mis estudiantes vean su rendimiento academico
+
+
+
+
+
+### 7. FE DE ERRATAS (Actualizar listas )
+
+### 8. Listas y diccionarios por comprencion
+es una tecnica pythonica que nos permite crear listas y diccionarios en una sola linea 
+conbinado bucles y deciciones 
+>[!NOTE]
+> **vlc** vaule loop condicion - valor bucle condicion.
+>  
+# lista por comprencion.
+  texto="1,4,8,9,6"
+   nueva_lista=[n for n in texto.split(",") if int(n)%2==0]
+   print(nueva_lista)
+# diccionarios por comprencion.

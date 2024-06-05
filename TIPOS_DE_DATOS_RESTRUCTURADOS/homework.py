@@ -12,74 +12,74 @@
 
 # YO COMO DUEÑO 
 # Crear una lista de alumnos
-lista_alumnos = [
-    {
-    "nombre": "Ruth",
-    "apellido": "Castillo",
-    "edad": 18
-    },{
-    "nombre": "Flor", 
-    "apellido": "Lucana", 
-    "edad": 18
-    },{
-    "nombre": "Rocío", 
-    "apellido": "Lobo", 
-    "edad": 20
-    },{
-    "nombre": "Lucy", 
-    "apellido": "Rivera", 
-    "edad": 18
-    },{
-    "nombre": "Abel", 
-    "apellido": "Rojas", 
-    "edad": 27
-    }
-]
+# lista_alumnos = [
+#     {
+#     "nombre": "Ruth",
+#     "apellido": "Castillo",
+#     "edad": 18
+#     },{
+#     "nombre": "Flor", 
+#     "apellido": "Lucana", 
+#     "edad": 18
+#     },{
+#     "nombre": "Rocío", 
+#     "apellido": "Lobo", 
+#     "edad": 20
+#     },{
+#     "nombre": "Lucy", 
+#     "apellido": "Rivera", 
+#     "edad": 18
+#     },{
+#     "nombre": "Abel", 
+#     "apellido": "Rojas", 
+#     "edad": 27
+#     }
+# ]
 
-# Insertar los datos de Anthony al final de la lista
-lista_alumnos.append({"nombre": "Anthony", "apellido": "Smith", "edad": 24})
+# # Insertar los datos de Anthony al final de la lista
+# lista_alumnos.append({"nombre": "Anthony", "apellido": "Smith", "edad": 24})
 
-# Eliminar los datos de Abel si existen en la lista
-lista_alumnos.remove({
-    "nombre":"Abel",
-    "apellido":"Rojas",
-    "edad":27
-})
-print(lista_alumnos)
+# # Eliminar los datos de Abel si existen en la lista
+# lista_alumnos.remove({
+#     "nombre":"Abel",
+#     "apellido":"Rojas",
+#     "edad":27
+# })
+# print(lista_alumnos)
 
 
-#tareas
-# crear una lista con 4 diccionarios donde tendran los datos de sus mascotas ( nombre, edad, sexo, raza)
-# tareas 
-# mostrar la lista con los 4 diccionarios
-# editar el 3er registro y cambiarle la edad sin modificar la lista original
-# mostrar la lista original y luego la lista con el 3er registro modificado.
+# #tareas
+# # crear una lista con 4 diccionarios donde tendran los datos de sus mascotas ( nombre, edad, sexo, raza)
+# # tareas 
+# # mostrar la lista con los 4 diccionarios
+# # editar el 3er registro y cambiarle la edad sin modificar la lista original
+# # mostrar la lista original y luego la lista con el 3er registro modificado.
 
-# Crear una lista con 4 diccionarios de mascotas
-mascotas = [
-    {"nombre": "Luna", "edad": 3, "sexo": "hembra", "raza": "Labrador"},
-    {"nombre": "Max", "edad": 5, "sexo": "macho", "raza": "Golden Retriever"},
-    {"nombre": "Bella", "edad": 2, "sexo": "hembra", "raza": "Poodle"},
-    {"nombre": "Rocky", "edad": 4, "sexo": "macho", "raza": "Bulldog"}
-]
+# # Crear una lista con 4 diccionarios de mascotas
+# mascotas = [
+#     {"nombre": "Luna", "edad": 3, "sexo": "hembra", "raza": "Labrador"},
+#     {"nombre": "Max", "edad": 5, "sexo": "macho", "raza": "Golden Retriever"},
+#     {"nombre": "Bella", "edad": 2, "sexo": "hembra", "raza": "Poodle"},
+#     {"nombre": "Rocky", "edad": 4, "sexo": "macho", "raza": "Bulldog"}
+# ]
 
-# Mostrar la lista con los 4 diccionarios
-print("Lista original:")
-for mascota in mascotas:
-    print(mascota)
+# # Mostrar la lista con los 4 diccionarios
+# print("Lista original:")
+# for mascota in mascotas:
+#     print(mascota)
 
-# Editar el 3er registro y cambiarle la edad sin modificar la lista original
-mascotas[2]["edad"] = 3
+# # Editar el 3er registro y cambiarle la edad sin modificar la lista original
+# mascotas[2]["edad"] = 3
 
-# Mostrar la lista original y luego la lista con el 3er registro modificado
-print("\nLista original:")
-for mascota in mascotas:
-    print(mascota)
+# # Mostrar la lista original y luego la lista con el 3er registro modificado
+# print("\nLista original:")
+# for mascota in mascotas:
+#     print(mascota)
 
-# Mostrar la lista con el 3er registro modificado
-print("\nLista con el 3er registro modificado:")
-for mascota in mascotas:
-    print(mascota)
+# # Mostrar la lista con el 3er registro modificado
+# print("\nLista con el 3er registro modificado:")
+# for mascota in mascotas:
+#     print(mascota)
 
 # un empresario de alquiler de autos desea guardar en una base de datos la informacion de sus vehiculos, 
 # proceso que desea automatizar con un sistema infromatico, las acciones que puede realizar el empresario 
@@ -95,21 +95,35 @@ for mascota in mascotas:
 ## programacion 
 
 # Lista de autos (simulando la base de datos)
-autos = [
-    {"id": 1, "marca": "Toyota", "modelo": "Corolla", "año": 2020, "precio_alquiler": 50},
-    {"id": 2, "marca": "Honda", "modelo": "Civic", "año": 2021, "precio_alquiler": 55},
-    {"id": 3, "marca": "Ford", "modelo": "Focus", "año": 2022, "precio_alquiler": 75}
-]
+# autos = [
+#     {"id": 1, "marca": "Toyota", "modelo": "Corolla", "año": 2020, "precio_alquiler": 50},
+#     {"id": 2, "marca": "Honda", "modelo": "Civic", "año": 2021, "precio_alquiler": 55},
+#     {"id": 3, "marca": "Ford", "modelo": "Focus", "año": 2022, "precio_alquiler": 75}
+# ]
 
-def ver_lista_autos():
-    # verifica si hay autos en la lista 
-    if len(autos) == 0:
-        print("No hay autos disponibles.")
-    else:
-        #imprime la lista de autos disponibles
-        print("Lista de autos disponibles:")
-        for auto in autos:
-            print(f"ID: {auto['id']}, Marca: {auto['marca']}, Modelo: {auto['modelo']},
-                   Año: {auto['año']}, Precio de alquiler: {auto['precio_alquiler']}")
+# def ver_lista_autos():
+#     # verifica si hay autos en la lista 
+#     if len(autos) == 0:
+#         print("No hay autos disponibles.")
+#     else:
+#         #imprime la lista de autos disponibles
+#         print("Lista de autos disponibles:")
+#         for auto in autos:
+#             print(f"ID: {auto['id']}, Marca: {auto['marca']}, Modelo: {auto['modelo']},
+#                    Año: {auto['año']}, Precio de alquiler: {auto['precio_alquiler']}")
 
-ver_lista_autos()
+# ver_lista_autos()
+
+
+
+# crear una lista de los primeros 20 numeros primos haciendo uso de comprencion
+def es_primo(num):
+    if num < 2:
+        return False
+    for n in range(2, int(num**0.5) + 1):
+        if num % n == 0:
+            return False
+    return True
+
+numeros_primos = [x for x in range(2, 71) if es_primo(x)][:20]
+print(numeros_primos)
