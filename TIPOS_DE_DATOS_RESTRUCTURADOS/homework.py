@@ -117,13 +117,8 @@
 
 
 # crear una lista de los primeros 20 numeros primos haciendo uso de comprencion
-def es_primo(num):
-    if num < 2:
-        return False
-    for n in range(2, int(num**0.5) + 1):
-        if num % n == 0:
-            return False
-    return True
+numeros_primos = [num for num in range(2, 100) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1) if num != i)]
 
-numeros_primos = [x for x in range(2, 71) if es_primo(x)][:20]
-print(numeros_primos)
+primeros_20_primos = [num for num in numeros_primos][:20]
+
+print(primeros_20_primos)

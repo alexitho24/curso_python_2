@@ -1,5 +1,5 @@
  lista=["abel","anthony","miguel"]
-diccionario={"nombre":"antonio", "edad":15 "sexo":False}
+ diccionario={"nombre":"antonio", "edad":15 "sexo":False}
  print(diccionario["nombre"])
 
  texto="hola"
