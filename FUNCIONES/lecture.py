@@ -1,5 +1,6 @@
 # return devuelve valores que podre hacer uso 
 # crear una funcion que retorne el numero 10 y muestre por terminal si es par
+# siempre que el valor 
 def diez():
     return 10 
 if diez()%2==0:
