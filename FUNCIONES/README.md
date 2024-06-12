@@ -55,3 +55,23 @@ def lista():
 # retorna ["hola",45]
 def dicc():
     return {"nombre":"jose","edad":45}
+#retorna {#"nombre":"jose":"edad":45}
+```
+## parametros y argumentos 
+si una funcion no dispusiera de valores de entrada estaria limitada en su actuacion. Es por ello que los `parametros` no permiten variar los datos que consume una funcion para obtener distintos resultados.
+**ejemplo**
+*crear una funcion que recibe un valor numerico y devuelve su raiz cuadrada*
+```python
+def sqrt(valor):
+    return valor**(1/2)
+# NOTA: en este caso, el valor 4 es un argumento de la funcion 
+    sqrt(4)
+```
+cuando llamamos a una funcion con `argumentos`, los valores de estos argumentos se copian en los correspondiente `parametros` dentro de la funcion.
+```python 
+# creamos la funcion
+def ejm(a,b,c):
+    return a+b+c
+ejm(4,5,6)
+```
+
