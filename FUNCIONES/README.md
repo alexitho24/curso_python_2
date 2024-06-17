@@ -74,4 +74,107 @@ def ejm(a,b,c):
     return a+b+c
 ejm(4,5,6)
 ```
+### Argumentos nominales
+en esta aproximacion los argumentos no son copiados en un orden especifico sino que **se asigana por nombre a cada parametro**. Ello nos permite evitar el problema de conocer o recordar cual es el orden de los parametros en la difinicion de la funcion. para utilizarlo, basta con realizar una asignacion  de cada argumento en la propia llamada a la funcion.
+**ejemplo**
+```python
+def buil_cpu(familia,num_core,frecuencia):
+    print(f"""
+    la cpu es de la familia {familia},
+    con {num_core} cores y con una 
+    fecuencia de {frecuencia}
+    """)
+# haciendo uso de argumentos nominales
+    build_cpu(num_core=4,familia="intel",frecuencia=2.7)
+```
+### Argumentos posicionales
+los argumentos son copiados en un orden especifico, en este caso debemos conocer o recordad cual es el orden de los parametros 
+**ejmplo**
+```python
+def buil_cpu(familia,num_core,frecuencia):
+    print(f"""
+    la cpu es de la familia {familia},
+    con {num_core} cores y con una 
+    fecuencia de {frecuencia}
+    """)
+# haciendo uso de argumentos posicionales
+buil_cpu("intel",4,2.7)
+```
+## Parametros por defecto
+es posible espesificar **valor por defecto** en los parametros de una funcion, en el caso de que no se proporcione un valor al argumento en la llamada a la funcion, el parametro correspondiente tomara el valor definido por defecto.
+**ejemplo**
+```python
+def alumnos(nom,app,estado="aprobado"):
+    alumnos("ruth","castillo")
+    alumnos("anthony","crucez","desaprobado")
+```
+## Desempaquetado/Empaquetado de argumentos (tarea)
+El desempaquetado y empaquetado de argumentos en Python se refiere a la capacidad de pasar múltiples argumentos a una función de manera flexible.
+ 
+# Empaquetado de argumentos:
+ 
+- Empaquetado de argumentos posicionales: Permite pasar un número variable de argumentos posicionales a una función utilizando el operador  * . Por ejemplo:
+ 
+python
+ Copiar
+def sumar(*args):
+    total = sum(args)
+    return total
 
+resultado = sumar(1, 2, 3, 4, 5)
+print(resultado)  # Output: 15
+ 
+- Empaquetado de argumentos de palabras clave: Permite pasar un número variable de argumentos de palabras clave a una función utilizando el operador  ** . Por ejemplo:
+ 
+python
+ Copiar
+def imprimir_info(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+imprimir_info(nombre="Alice", edad=30, ciudad="Madrid")
+Output:
+nombre: Alice
+edad: 30
+ciudad: Madrid
+ 
+# Desempaquetado de argumentos:
+ 
+- Desempaquetado de argumentos posicionales: Permite pasar una secuencia de elementos como argumentos posicionales a una función utilizando el operador  * . Por ejemplo:
+ 
+python
+ Copiar
+numeros = [1, 2, 3, 4, 5]
+resultado = sum(*numeros)
+print(resultado)  # Output: 15
+ 
+- Desempaquetado de argumentos de palabras clave: Permite pasar un diccionario como argumentos de palabras clave a una función utilizando el operador  ** . Por ejemplo:
+ 
+python
+ Copiar
+datos = {"nombre": "Bob", "edad": 25, "ciudad": "Barcelona"}
+imprimir_info(**datos)
+# Output:
+# nombre: Bob
+# edad: 25
+# ciudad: Barcelona
+ 
+ 
+El empaquetado y desempaquetado de argumentos en Python proporciona flexibilidad al trabajar con funciones que requieren un número variable de argumentos.
+
+
+## funciones interna de python(tarea)
+Las funciones internas de Python son funciones incorporadas en el lenguaje que están disponibles para su uso sin necesidad de importar ningún módulo adicional. Algunas de las funciones internas más comunes en Python son:
+ 
+1.  print() : Utilizada para imprimir mensajes en la consola.
+2.  len() : Devuelve la longitud de un objeto, como una lista o una cadena.
+3.  type() : Devuelve el tipo de un objeto.
+4.  input() : Permite al usuario ingresar datos desde la consola.
+5.  range() : Genera una secuencia de números.
+6.  sum() : Calcula la suma de los elementos en una lista.
+7.  min() : Devuelve el valor mínimo en una lista.
+8.  max() : Devuelve el valor máximo en una lista.
+9.  abs() : Devuelve el valor absoluto de un número.
+10.  round() : Redondea un número al entero más cercano.
+ 
+Estas son solo algunas de las muchas funciones internas disponibles en Python para realizar diversas operaciones.

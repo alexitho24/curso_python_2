@@ -28,9 +28,24 @@ def mensaje(nombre):
 
 #crear una funcion que reciba por parametro una lista de numeros y me devuelva el numero menor, 
 # mostrar por terminal el valor retornado por la funcion 
-def encontrar_numero_menor(lista):
-    return min(lista)
-numeros=[5,8,2,20,17]
-resultado=
-encontrar_numero_menor(numeros)
-print(resultado)
+lista=[4,3,6,74,5]
+def min(1):
+    minimo=1[0]
+    for n in 1:
+        if n < minimo:
+            minimo=n
+        return minimo
+    print(min(lista))   
+
+# crear una funcion que resiba como parametro en nombre y la edad de una persona mi funcion debera retornar un
+# diccionario con los datos, luego mostrar por terminal el valor de retorno en mi funcion
+def crear_persona(nombre, edad):
+    persona = {"nombre": nombre, "edad": edad}
+    return persona
+def mostrar_valor_retorno():
+    nombre = input("Ingrese el nombre de la persona: ")
+    edad = int(input("Ingrese la edad de la persona: "))
+    datos_persona = crear_persona(nombre, edad)
+    print("Datos de la persona:")
+    print(datos_persona)
+mostrar_valor_retorno()
