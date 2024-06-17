@@ -178,3 +178,10 @@ Las funciones internas de Python son funciones incorporadas en el lenguaje que e
 10.  round() : Redondea un número al entero más cercano.
  
 Estas son solo algunas de las muchas funciones internas disponibles en Python para realizar diversas operaciones.
+
+## tipos de funciones 
+### funciones anonimas (funciones lambda)
+### funciones closure
+### funciones callback
+
+### programacion funcional
