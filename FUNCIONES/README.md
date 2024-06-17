@@ -181,7 +181,15 @@ Estas son solo algunas de las muchas funciones internas disponibles en Python pa
 
 ## tipos de funciones 
 ### funciones anonimas (funciones lambda)
+una funcion que no tiene nombre
+`lambada:"hola`
 ### funciones closure
+una funcion que dentro tiene otra funcion 
+`def saludo(nombre):
+print (f"bienbenido {nombre}")`
+
 ### funciones callback
+funciones que reciben por parametro otra funcion
+`int(input("ingrese un numero: "))`
 
 ### programacion funcional
