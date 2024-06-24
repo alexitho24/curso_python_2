@@ -183,6 +183,21 @@ Estas son solo algunas de las muchas funciones internas disponibles en Python pa
 ### funciones anonimas (funciones lambda)
 una funcion que no tiene nombre
 `lambada:"hola`
+Funciones Anónimas
+Las funciones anónimas en Python, también conocidas como funciones lambda, son funciones sin nombre definidas utilizando la palabra clave lambda. Aquí tienes un resumen sobre las funciones anónimas en Python:
+Características Principales
+Las funciones anónimas son funciones pequeñas y temporales.
+Se utilizan para realizar operaciones simples y rápidas.
+No requieren la declaración formal de una función utilizando def.
+Sintaxis Básica
+La sintaxis básica para definir una función anónima en Python es la siguiente:
+
+lambda arguments: expression
+
+Ejemplo de Uso
+Definir una función anónima que suma dos números
+sumar = lambda x, y: x + y
+print(sumar(3, 4))  # Output: 7
 ### funciones closure
 una funcion que dentro tiene otra funcion 
 `def saludo(nombre):
@@ -193,3 +208,19 @@ funciones que reciben por parametro otra funcion
 `int(input("ingrese un numero: "))`
 
 ### programacion funcional
+la programacion funcional no requiere que sepas como se
+desarrolla y ejecuta el procesamiento de la informacion 
+**ejemplo**
+```python 
+lista=[5,7,8,4,1]
+def num_minimo(1):
+    minimo=1[0]
+    for n in l:
+        if n < minimo:
+            minimo=n
+        return minimo
+# programacion funcional 
+min(lista)
+```
+
+#### averiguar sobre map(), filter(), reduce()

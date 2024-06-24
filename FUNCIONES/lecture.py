@@ -64,3 +64,44 @@
 #     kwargs["nombre"]="abel"
 #     print(kwargs)
 # alumnos(nombre="miguel",apellido="largo",edad=30)
+
+## ejemplos de lambda
+# saludo=lambda n:f"hola, {n}"
+# print(saludo("rut","castillo"))
+
+# crear un programa anonimo que reciba como parametro
+#  una lista de 5 numeros y retorne dos listas una con lo
+#  numeros pares y otra cn numeros impares
+
+# def separar_numeros(lista):
+#     pares = []
+#     impares = []
+    
+#     for numero in lista:
+#         if numero % 2 == 0:
+#             pares.append(numero)
+#         else:
+#             impares.append(numero)
+    
+#     return pares, impares
+
+# numeros = [1, 2, 3, 4, 5 ]
+# pares, impares = separar_numeros(numeros)
+
+# print("Numeros pares:", pares)
+# print("Numeros impares:", impares)
+#  #con lambda
+# separar_numeros = lambda lista: ([numero for numero in lista if numero % 2 == 0], [numero for numero in lista if numero % 2 != 0])
+
+# numeros = [1, 2, 3, 4, 5]
+# pares, impares = separar_numeros(numeros)
+
+# print("Numeros pares:", pares)
+# print("Numeros impares:", impares)
+
+# def mensaje(m):
+#     print(m)
+# def pedir_nombre():
+#     nombre=input("ingresa tu nombre")
+#     return nombre 
+# mensaje(pedir_nombre())
