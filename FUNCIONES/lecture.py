@@ -105,3 +105,77 @@
 #     nombre=input("ingresa tu nombre")
 #     return nombre 
 # mensaje(pedir_nombre())
+
+# # map
+#lista=[4,7,8,5,2]
+#nueva_lista=list(map(lambda x:x+1, lista)) # por defecto retorna una lista 
+#print(nueva_lista)
+
+#tengo una lista de alumnos que todos ellos an aprobado y todos ellos pasan al tercer semestre,
+#problema en mi lista tods estan en el segundo semestre por lo que tendremos que crear una solución
+#  que cambie el campo de semestre de 2 a 3 
+lista_alumnos=[
+
+    { 
+        "nombre":"abel",
+        "edad":36,
+        "semestre":2
+
+    },
+    {
+       "nombre":"anthony",
+       "edad":40,
+       "semestre":2
+
+    },
+    {
+      "nombre":"edhit",
+       "edad":50,
+       "semestre":2
+
+    }
+]
+def objeto(e)
+    if "semestre" in e:
+        e["semestre"]=e["semestre"]+1
+    return [
+        e
+    ]
+alumnos_actualizados=list(map(objeto,lista_alumnos))
+print(alumnos_actualizados)
+
+##
+lista_alumnos=[
+
+    { 
+        "nombre":"abel",
+        "edad":36,
+        "semestre":2
+        
+
+    },
+    {
+       "nombre":"anthony",
+       "edad":40,
+       "semestre":2
+
+    },
+    {
+      "nombre":"edhit",
+       "edad":50,
+       "semestre":2
+
+    }
+]
+def objeto(e)
+    if "semestre" in e:
+        e["semestre"]=e["semestre"]+1
+    return [
+        e
+    ]
+alumnos_actualizados=list(map(objeto,lista_alumnos))
+print(alumnos_actualizados)
+
+
+
+#filter

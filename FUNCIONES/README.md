@@ -224,3 +224,13 @@ min(lista)
 ```
 
 #### averiguar sobre map(), filter(), reduce()
+
+## map
+ la función map nos permite aplicar una función sobre los items de un objeto iterable (lista, tupla, etc...). La función retornará un objeto map que posteriormente podemos convertir a una lista o tupla. Es posible utilizar map junto con una función lambda. En lo personal considero esta la mejor opción
+```python
+  
+## filter
+Cómo su nombre lo indica, esta función nos permite realizar un filtro sobre los elementos de la colección. La estructura de la función es la siguiente. La función a aplicar será aplicada a cada uno de los elementos de la colección. Esta función siempre deberá retornar un valor booleano.
+
+## reduce
+reduce nos permitirá reducir los elementos de la colección. Podemos ver a esta función como un acumulador
