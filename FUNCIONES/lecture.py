@@ -114,37 +114,74 @@
 #tengo una lista de alumnos que todos ellos an aprobado y todos ellos pasan al tercer semestre,
 #problema en mi lista tods estan en el segundo semestre por lo que tendremos que crear una solución
 #  que cambie el campo de semestre de 2 a 3 
-lista_alumnos=[
+# lista_alumnos=[
 
-    { 
-        "nombre":"abel",
-        "edad":36,
-        "semestre":2
+#     { 
+#         "nombre":"abel",
+#         "edad":36,
+#         "semestre":2
 
-    },
-    {
-       "nombre":"anthony",
-       "edad":40,
-       "semestre":2
+#     },
+#     {
+#        "nombre":"anthony",
+#        "edad":40,
+#        "semestre":2
 
-    },
-    {
-      "nombre":"edhit",
-       "edad":50,
-       "semestre":2
+#     },
+#     {
+#       "nombre":"edhit",
+#        "edad":50,
+#        "semestre":2
 
-    }
-]
-def objeto(e)
-    if "semestre" in e:
-        e["semestre"]=e["semestre"]+1
-    return [
-        e
-    ]
-alumnos_actualizados=list(map(objeto,lista_alumnos))
-print(alumnos_actualizados)
+#     }
+# ]
+# def objeto(e):
+#     if "semestre" in e:
+#         e["semestre"]=e["semestre"]+1
+#     return [
+#         e
+#     ]
+# alumnos_actualizados=list(map(objeto,lista_alumnos))
+# print(alumnos_actualizados)
 
 ##
+# lista_alumnos=[
+
+#     { 
+#         "nombre":"abel",
+#         "edad":36,
+#         "semestre":2
+        
+
+#     },
+#     {
+#        "nombre":"anthony",
+#        "edad":40,
+#        "semestre":2
+
+#     },
+#     {
+#       "nombre":"edhit",
+#        "edad":50,
+#        "semestre":2
+
+#     }
+# ]
+# def objeto(e):
+#     if "semestre" in e:
+#         e["programa_estudio"]="APSTI"
+#     return [
+#         e
+#     ]
+# alumnos_actualizados=list(map(objeto,lista_alumnos))
+# print(alumnos_actualizados)
+
+# filter
+# devolver los numeros pares de una lista 
+lista=[4,8,2,5,7,10,6,5,3,20]
+nueva_lista=list(filter(lambda x:x%2==0,lista))
+print(nueva_lista)
+
 lista_alumnos=[
 
     { 
@@ -167,15 +204,6 @@ lista_alumnos=[
 
     }
 ]
-def objeto(e)
-    if "semestre" in e:
-        e["semestre"]=e["semestre"]+1
-    return [
-        e
-    ]
-alumnos_actualizados=list(map(objeto,lista_alumnos))
-print(alumnos_actualizados)
+menores_de_50 = list(filter(lambda alumno: alumno["edad"] < 50, lista_alumnos))
 
-
-
-#filter
+print(menores_de_50)
