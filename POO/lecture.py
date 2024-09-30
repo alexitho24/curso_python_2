@@ -7,4 +7,3 @@ print(labrador.nombre)
 
 aleman=mascota()
 aleman.nombre="peruano"
-ss

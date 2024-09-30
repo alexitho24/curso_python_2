@@ -1,27 +1,28 @@
 # crear una clase de alumnos con los atributos que usted crea por conveninte 
 # luego instancia a 4 alumnos
 class Alumno:
-    def __init__(self, nombre, edad, grado, promedio):
-        self.nombre = nombre      
-        self.edad = edad          
-        self.grado = grado        
-        self.promedio = promedio   
+    def _init_(self, nombre, dni, edad, email, programa_estudio="APSTI" ):
+        self.nombre=nombre
+        self.dni=dni
+        self.edad=edad
+        self.email=email
+        self.programa_estudio=programa_estudio
+    # metodos
+    def escribir(self):
+        print("estoy escribiendo")
+    def tarea(self,nombre_docente):
+        print ("haciendo la tarea de:", nombre_docente)
+    def terminar_tarea(self):
+        print ("terminando tarea anterior")
+maricielo=Alumno("MARICIELO",75869321,14,"yo@gmail")
+maricielo.tarea("alicia")
+maricielo.terminar_tarea()
+maricielo.tarea ("alvarez")
 
-    def mostrar_informacion(self):
-        print(f"Nombre: {self.nombre}")
-        print(f"Edad: {self.edad}")
-        print(f"Grado: {self.grado}")
-        print(f"Promedio: {self.promedio:.2f}\n")
 
+maricielo=Alumno("MARICIELO",75869321,14,"yo@gmail")
+print(maricielo.programa_estudio)
+mercedes=Alumno("meche",74859632,15,"tu@gmail.com", "Enfermeria")
+prin(mercedes.programa_estudio)
+       
 
-# Instanciando 4 alumnos
-alumno1 = Alumno("Juan Pérez", 16, "10°", 8.5)
-alumno2 = Alumno("María Gómez", 15, "9°", 9.0)
-alumno3 = Alumno("Carlos López", 17, "11°", 7.8)
-alumno4 = Alumno("Ana Torres", 16, "10°", 9.5)
-
-# Mostrando la información de los alumnos
-alumno1.mostrar_informacion()
-alumno2.mostrar_informacion()
-alumno3.mostrar_informacion()
-alumno4.mostrar_informacion()
